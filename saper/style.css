@@ -1,0 +1,55 @@
+*{
+    Padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#minefields{
+    display: flex;
+    flex-wrap: wrap;
+    height: 640px;
+    width: 640px;
+}
+.white{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cube{
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    background-color: grey;
+    
+}
+
+.bomb{
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    background-color: red;
+}
+
+#lose{
+    color: red;
+    font-size: 190px;
+    position: absolute;
+    visibility:hidden;
+}
+.flag{
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    background-color: green;
+}

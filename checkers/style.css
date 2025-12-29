@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, grey, rgb(200,200,200) 40%, grey 80%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.board{
+    width: 644px;
+    height: 644px;
+    border: solid 2px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.board_cube{
+    height: 80px;
+    width: 80px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 90%;
+}
+
+.black_piece{
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.white_piece{
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background-color: white;
+}
+.grey{
+    background-color: grey;
+}
+.white{
+    background-color: white;
+}
+
+.possible_move{
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+    background-color: greenyellow;
+}
+
+.possible_attack_move{
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+    background-color: darkred;
+}
+.get_lost{
+    animation: get_out 1s linear; 
+}
+@keyframes get_out{
+    100%{
+        transform: translateX(1080px) translateY(0px);
+        opacity: 0;
+    }
+    
+}
